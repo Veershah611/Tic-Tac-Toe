@@ -1,5 +1,44 @@
-Tic-Tac-Toe Game in CA robust, terminal-based implementation of the classic Tic-Tac-Toe game. This project focuses on clean code structure, modular programming, and user-friendly interaction within a CLI (Command Line Interface) environment.📋 Table of ContentsFeaturesTechnical ImplementationHow to RunCode ArchitectureFuture Enhancements✨ FeaturesTwo-Player Gameplay: Interactive mode for two local players with custom name inputs.Input Mapping: Uses a simple 'a-i' character mapping system, making it intuitive for users to pick a spot without typing coordinates.Input Validation: Built-in logic to handle invalid keystrokes and prevent players from overwriting occupied squares.Win/Draw Detection: Automatically evaluates the board state after every turn to detect horizontal, vertical, and diagonal victories.🛠️ Technical ImplementationThis project utilizes core C programming concepts:2D Arrays: The game board is managed using a $3 \times 3$ character array.Pointers: Used for efficient string handling of player names.Control Flow: Implements a game loop using while logic and a switch-case block for coordinate mapping.State Management: Tracks turns, move counts, and winning status to ensure the game terminates correctly.🕹️ How to RunPrerequisitesA C compiler (GCC, Clang, or MSVC).CompilationClone this repository:Bashgit clone https://github.com/your-username/tic-tac-toe-c.git
-Navigate to the directory:Bashcd tic-tac-toe-c
-Compile the source code:Bashgcc main.c -o tictactoe
-ExecutionRun the compiled program:Bash./tictactoe
-🏗️ Code ArchitectureThe source code is organized into three main segments to ensure readability and maintainability:Main Loop (main): Controls the high-level game flow, alternating turns until a winner is found or the board is full.Player Action (player): Captures user input and validates the move. It ensures that the board state remains consistent.Win Condition Logic (check): An algorithmic approach to verify if the last move resulted in a win.🚀 Future Enhancements[ ] AI Opponent: Implementation of the Minimax algorithm for a single-player mode.[ ] Colorized Output: Adding ANSI escape codes to highlight 'X' and 'O' in different colors.[ ] Scoreboard: A file-handling feature to save win/loss records permanently.
+# Tic-Tac-Toe Game in C
+
+A robust, terminal-based implementation of the classic Tic-Tac-Toe game. This project focuses on clean code structure, modular programming, and user-friendly interaction within a CLI (Command Line Interface) environment.
+
+---
+
+## 📋 Table of Contents
+* [Features](#-features)
+* [Technical Implementation](#-technical-implementation)
+* [How to Run](#-how-to-run)
+* [Code Architecture](#-code-architecture)
+* [Future Enhancements](#-future-enhancements)
+
+---
+
+## ✨ Features
+* **Two-Player Gameplay:** Interactive mode for two local players with custom name inputs.
+* **Input Mapping:** Uses a simple 'a-i' character mapping system, making it intuitive for users to pick a spot without typing coordinates.
+* **Input Validation:** Built-in logic to handle invalid keystrokes and prevent players from overwriting occupied squares.
+* **Win/Draw Detection:** Automatically evaluates the board state after every turn to detect horizontal, vertical, and diagonal victories.
+
+---
+
+## 🛠️ Technical Implementation
+This project utilizes core C programming concepts:
+
+* **2D Arrays:** The game board is managed using a $3 \times 3$ character array.
+* **Pointers:** Used for efficient string handling of player names in functions.
+* **Control Flow:** Implements a game loop using `while` logic and a `switch-case` block for coordinate mapping.
+* **State Management:** Tracks turns, move counts, and winning status to ensure the game terminates correctly.
+
+
+
+---
+
+## 🕹️ How to Run
+
+### Prerequisites
+* A C compiler (GCC, Clang, or MSVC).
+
+### Compilation
+1. **Clone this repository:**
+   ```bash
+   git clone [https://github.com/your-username/tic-tac-toe-c.git](https://github.com/your-username/tic-tac-toe-c.git)
